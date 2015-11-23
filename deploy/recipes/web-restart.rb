@@ -10,7 +10,7 @@ node[:deploy].each do |application, deploy|
     next
   end
 
-  service 'nginx' do
+  service 'tomcat7' do
     supports :status => true, :restart => true, :reload => true
     action :restart
   end
